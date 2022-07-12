@@ -5,7 +5,7 @@ Library  Selenium2Library
 Test Teardown  Close All Browsers
 
 *** Variables ***
-${App URL}  http://localhost:3000
+${App URL}  https://rwa.railflow.io
 ${Login URL}  ${App URL}/signin
 ${Login button}  xpath=//*[@id="root"]/div/main/div[1]/form/button
 ${Login name}  xpath=//*[@id="root"]/div/div/div/div[1]/div[2]/h6[2]
@@ -38,9 +38,10 @@ Click Log in
   Click Element  ${Login button}
 
 Welcome Page Should Be Open    
+  Wait Until Location Is  ${App URL}  5s  
   Wait Until Page Contains Element   ${Login name}  5s
   ${name}  Get Text  ${Login name}
-  Should Be Equal As Strings  ${name}  whatever  
+  Should Be Equal As Strings  ${name}  @Katharina_Bernier  
   
 Error Message Should Be Displayed
     Wait Until Location Is  ${Login URL}  5s

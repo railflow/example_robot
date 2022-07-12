@@ -56,9 +56,9 @@ Where:
 
 Please see [Railflow NPM documentation](https://docs.railflow.io/cli/railflow-npm/) for the all the details about Railflow CLI options.
 
-Test run in TestRail:
+### Test run in TestRail
 
 ![Test results in TestRail](img/TestRail_testrun.png "Test results in Testrail")
 
-Test case results in TestRail:
+### Test case results in TestRail
 ![Test results in TestRail](img/TestRail_testcase_results.png "Test results in Testrail")
